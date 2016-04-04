@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Property Grid</title>
+    <!-- include react -->
+    <script src="./node_modules/react/dist/react-with-addons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <style>
+        h1 {
+            padding: 10px;
+            border-bottom: 1px solid grey;
+            color: white;
+            background: linear-gradient(
+                to bottom,
+                #6faafb,
+                #6faafb 50%,
+                #84b8ff 50%,
+                #84b8ff
+            );
+        }
+        .render {
+            background-color: #f1faff; 
+        }
+
+    </style>
+</head>
+<body>
+    <div id="content">
+        <!-- this is where the root react component will get rendered -->
+        <h1>Tutoriel 1</h1>
+        <div class="render dotted" id="tuto1"></div>
+        <h1>Tutoriel 2</h1>
+        <div class="render" id="tuto2"></div>
+        <h1>Tutoriel 3</h1>
+        <div class="render" id="tuto3"></div>
+        <h1>Tutoriel 4</h1>
+        <div class="render" id="tuto4"></div>
+        <h1>Tutoriel 5</h1>
+        <div class="render" id="tuto5"></div>
+        <h1>Tutoriel 6</h1>
+        <div class="render" id="tuto6"></div>
+        <h1>Tutoriel 7</h1>
+        <div class="render" id="tuto7"></div>
+        <h1>Tutoriel 8</h1>
+        <div class="render" id="tuto8"></div>
+        <h1>Tutoriel 9</h1>
+        <div class="render" id="tuto9"></div>
+        <h1>Tutoriel 10</h1>
+        <div class="render" id="tuto10"></div>
+    </div>
+    <!-- include the webpack-dev-server script so our scripts get reloaded when we make a change -->
+    <!-- we'll run the webpack dev server on port 8090, so make sure it is correct -->
+    <script src="http://localhost:8090/webpack-dev-server.js"></script>
+    <!-- include the bundle that contains all our scripts, produced by webpack -->
+    <!-- the bundle is served by the webpack-dev-server, so serve it also from localhost:8090 -->
+    <script type="text/javascript" src="http://localhost:8090/assets/bundle.js"></script>
+</body>
+</html>
